@@ -1,6 +1,6 @@
 from distutils.core import setup
 
-setup(name='Pirate',
+setup(name='Pyrate',
       version='1.0',
       description='A third party API for thepiratebay',
       author='Jake Eaton',

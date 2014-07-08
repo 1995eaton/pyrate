@@ -54,6 +54,9 @@ class Torrent(object):
 
 class TorrentList(list):
 
+    def __add__(self, _list):
+        return TorrentList(list(self) + _list)
+
     def order(self, key=None, reverse=False):
         return TorrentList(sorted(self, key=attrgetter(key), reverse=reverse))
 
